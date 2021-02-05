@@ -23,15 +23,21 @@
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form class="" onsubmit="Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Name">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="Client.handleSubmit(event)">
                 </form>
-            <section>
+            </section>
 
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="results">
+
+                    <div id="location"></div>
+                    <div id="date"></div>
+                    <div id="temp"></div>
+
+                </div>
             </section>
         </main>
 
